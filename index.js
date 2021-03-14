@@ -3,7 +3,7 @@ const messages = require('./messages');
 const { from, of } = require('rxjs');
 const { delay, concatMap } = require('rxjs/operators');
 
-const baseUrl = process.env.BASE_WS_URL || 'ws://localhost:3100/widgets/';
+const baseUrl = process.env.BASE_WS_URL || 'ws://localhost:3100/chargers/';
 const chargerId = process.env.CHARGE_ID || 'c1234';
 const ws = new WebSocket(baseUrl + chargerId);
 
